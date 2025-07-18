@@ -1,6 +1,8 @@
-## 📄 `Dockerized-CRUD-Application`
 
-```markdown
+
+
+# 📄 Dockerized-CRUD-Application
+
 # 🚀 Dockerized Full Stack CRUD App (Node.js + MongoDB + React)
 
 A full-stack CRUD application built with **Node.js**, **MongoDB**, and **React**, all running inside **Docker containers**. Mongo Express is included for easy database management via browser.
@@ -9,11 +11,11 @@ A full-stack CRUD application built with **Node.js**, **MongoDB**, and **React**
 
 ## 📦 Stack
 
-- **Frontend**: React
-- **Backend**: Node.js (Express)
-- **Database**: MongoDB
-- **DB GUI**: Mongo Express
-- **Containerization**: Docker + Docker Compose
+- **Frontend**: React  
+- **Backend**: Node.js (Express)  
+- **Database**: MongoDB  
+- **DB GUI**: Mongo Express  
+- **Containerization**: Docker + Docker Compose  
 
 ---
 
@@ -24,14 +26,13 @@ A full-stack CRUD application built with **Node.js**, **MongoDB**, and **React**
 | Frontend (React) | http://localhost:3001       |
 | Backend (API)    | http://localhost:3000/items |
 | Mongo Express    | http://localhost:8081       |
-| MongoDB Port     | `27017` (local access)
+| MongoDB Port     | `27017` (local access)      |
 
 ---
 
 ## 📁 Project Structure
 
-
-
+```plaintext
 docker-crud-app/
 ├── backend/               # Express server & Mongo models
 │   ├── models/            # Mongoose schemas
@@ -47,9 +48,7 @@ docker-crud-app/
 ├── Dockerfile             # Dockerfile for backend
 ├── docker-compose.yml     # Multi-container configuration
 └── README.md              # You're here!
-
-
-
+````
 
 ---
 
@@ -60,7 +59,7 @@ docker-crud-app/
 ```bash
 git clone https://github.com/your-username/docker-crud-app.git
 cd docker-crud-app
-````
+```
 
 ### 2. 🛠 Create `.env` File
 
@@ -90,38 +89,25 @@ ME_CONFIG_BASICAUTH_PASSWORD=admin
 docker-compose --env-file .env up --build
 ```
 
-> This builds and starts all containers: frontend, backend, mongo, mongo-express.
+This builds and starts all containers: frontend, backend, mongo, mongo-express.
 
 ---
 
 ## 🔍 API Endpoints
 
-| Method | Endpoint     | Description   |
-| ------ | ------------ | ------------- |
-| GET    | `/items`     | Get all items |
-| POST   | `/items`     | Create item   |
-| PUT    | `/items/:id` | Update item   |
-| DELETE | `/items/:id` | Delete item   |
+| Method | Endpoint    | Description   |
+| ------ | ----------- | ------------- |
+| GET    | /items      | Get all items |
+| POST   | /items      | Create item   |
+| PUT    | /items/\:id | Update item   |
+| DELETE | /items/\:id | Delete item   |
 
 ---
 
 ## 📸 Screenshots
 
-<details>
-<summary>Frontend UI</summary>
-
-![React Frontend UI](screenshots/ui.png)
-
-</details>
-
-<details>
-<summary>Mongo Express UI</summary>
-
-![Mongo Express UI](screenshots/mongoexpress.png)
-
-</details>
-
-
+* Frontend UI (React)
+* Mongo Express UI
 
 ---
 
@@ -144,7 +130,7 @@ docker-compose down -v
 ## 🧠 Future Improvements
 
 * Add form validation
-* Use MongoDB auth with users
+* Use MongoDB authentication with users
 * Add unit tests (Jest, Supertest)
 * Add persistent storage volumes for MongoDB
 * Deploy on EC2 or Render
@@ -155,8 +141,6 @@ docker-compose down -v
 
 MIT License © [Sakkthivel](https://github.com/sakkthi27)
 
-```
 
----
 
 
